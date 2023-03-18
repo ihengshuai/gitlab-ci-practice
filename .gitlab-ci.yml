@@ -1,18 +1,39 @@
+image: node:14-alpine
+
 stages:
  - build
  - deploy
 
 build_code:
  stage: build
+ only:
+ - main
+ - testing
+ tags:
+ - testing
  script:
  - echo build stage
+ - yarn
+ - yarn build
+ - echo build success
+
 
 build_image:
  stage: build
+ only:
+ - main
+ - testing
+ tags:
+ - testing
  script:
- - echo build image stage 
+ - echo build image stage
 
 deploy:
  stage: deploy
+ tags:
+ - testing
+ only:
+ - main
+ - testing
  script:
  - echo deploy stage
