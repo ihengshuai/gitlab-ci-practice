@@ -13,8 +13,8 @@ build_code:
  - testing
  script:
  - echo build stage
- - yarn
- - yarn build
+ - pnpm install
+ - pnpm build
  - echo build success
 
 
