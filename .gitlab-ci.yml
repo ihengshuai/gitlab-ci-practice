@@ -20,6 +20,7 @@ build_code:
 
 build_image:
  stage: build
+ needs: ["build_code"]
  only:
  - main
  - testing
@@ -30,6 +31,7 @@ build_image:
 
 deploy:
  stage: deploy
+  needs: ["build_image"]
  tags:
  - testing
  only:
