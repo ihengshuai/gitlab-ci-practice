@@ -14,7 +14,7 @@ build_code:
  allow_failure: true
  script:
  - echo build stage
- - apk update && apk add git && apk add scp
+ - apk update && apk add git && apk add apk add openssh-client
  - npm config set registry https://registry.npm.taobao.org
  - npm install pnpm -g
  - pnpm install
