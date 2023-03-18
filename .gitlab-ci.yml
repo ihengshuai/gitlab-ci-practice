@@ -19,6 +19,7 @@ build_code:
  - npm install pnpm -g
  - pnpm install
  - pnpm run build
+ - scp ./dist/** root@192.168.10.99:/root/gitlab_ci_deploy
  - echo build success
 
 
