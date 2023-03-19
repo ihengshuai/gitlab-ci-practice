@@ -68,6 +68,7 @@ deploy:
 
 
 notice_success:
+ image: curlimages/curl:7.80.0
  stage: notice
  needs:
  - deploy
@@ -77,6 +78,7 @@ notice_success:
  - "curl -i -H \"Content-Type: application/json\" -X POST -d \"{code: 200, message: 构建成功}\" \"http:\\192.168.10.99:9999/success\""
 
 notice_failure:
+ image: curlimages/curl:7.80.0
  stage: notice
  needs:
  - deploy
