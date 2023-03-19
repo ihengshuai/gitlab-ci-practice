@@ -1,11 +1,11 @@
 ---
 layout: home
-title: 首页
+title: 博客首页 
 
 hero:
   name: I'm Hengshuai
   text: A web developer base on ShenZhen, China
-  tagline: A blog for sharing web development experiences... 
+  tagline: 分享我的web开发经验 
   image:
     src: https://ihengshuai-demo1.oss-cn-beijing.aliyuncs.com/logo.png
     alt: hengshuai's blog
@@ -16,6 +16,9 @@ hero:
     - theme: alt
       text: Readme
       link: /me/index.html
+    # - theme: alt
+    #   text: Contribute
+    #   link: https://github.com/ihengshuai/blog
 
 features:
   - icon: 🏝️
