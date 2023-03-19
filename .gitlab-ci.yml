@@ -70,6 +70,9 @@ deploy:
 notice_success:
  image: curlimages/curl:7.80.0
  stage: notice
+ only:
+ - main
+ - testing
  needs:
  - deploy
  when: on_success
@@ -80,6 +83,9 @@ notice_success:
 notice_failure:
  image: curlimages/curl:7.80.0
  stage: notice
+ only:
+ - main
+ - testing
  needs:
  - deploy
  when: on_failure
