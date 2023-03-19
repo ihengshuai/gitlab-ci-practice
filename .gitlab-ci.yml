@@ -75,7 +75,7 @@ notice_success:
  when: on_success
  script:
  - echo notice success
- - "curl -i -H \"Content-Type: application/json\" -X POST -d \"{code: 200, message: 构建成功}\" \"http:\\192.168.10.99:9999/success\""
+ - "curl -i -H \"Content-Type: application/json\" -X POST -d \"{code: 200, message: 构建成功}\" \"http://192.168.10.99:9999/success\""
 
 notice_failure:
  image: curlimages/curl:7.80.0
@@ -86,4 +86,4 @@ notice_failure:
  script:
  - echo notice failure
 #  - curl -I http:\/\/192.168.10.99:9999/success
- - "curl -i -H \"Content-Type: application/json\" -X POST -d \"{code: 500, message: 构建失败}\" \"http:\\192.168.10.99:9999/failure\""
+ - "curl -i -H \"Content-Type: application/json\" -X POST -d \"{code: 500, message: 构建失败}\" \"http://192.168.10.99:9999/failure\""
