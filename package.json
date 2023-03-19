@@ -2,7 +2,7 @@
   "name": "web1",
   "version": "1.0.1",
   "description": "this is a blog for sharing the knowledge of web development.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "dev": "vitepress dev docs --port=9999",
     "build": "vitepress build docs",
@@ -22,10 +22,6 @@
     "email": "ihengshuai@qq.com",
     "url": "http://192.168.10.10/frontend/web1"
   },
-  "repository": {
-    "type": "git",
-    "url": "http://192.168.10.10/frontend/web1.git"
-  },
   "homepage": "https://blog.usword.cn",
   "bugs": {
     "url": "https://github.com/ihengshuai/blog/issues"
@@ -41,3 +37,4 @@
     "vue": "^3.2.37"
   }
 }
+
